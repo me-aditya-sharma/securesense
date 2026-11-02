@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='%230071E3'><path d='M12 2 4 5v6c0 5 3.4 9.4 8 11 4.6-1.6 8-6 8-11V5l-8-3Z'/></svg>" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SecureSense 2.0 — Know Your Rights. Verify the Voice. Prevent the Fraud.</title>
+    <meta name="description" content="Hackathon-grade Indian Consumer Rights and Cyber-Threat Diagnostic Platform under CPA 2019." />
+    <!-- Google Fonts: Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              brand: '#0071E3',
+              'brand-hover': '#005BB5',
+              canvas: '#FFFFFF',
+              surface: '#F5F5F7',
+              'surface-subtle': '#FAFAFC',
+              textPrimary: '#1D1D1F',
+              textSecondary: '#6E6E73',
+              hairline: '#E5E5EA',
+              riskHigh: '#FF3B30',
+              riskMod: '#FF9500',
+              riskLow: '#34C759',
+              riskGray: '#8E8E93',
+            },
+            fontFamily: {
+              sans: ['Inter', '-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'sans-serif'],
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        background-color: #FFFFFF;
+        color: #1D1D1F;
+        -webkit-font-smoothing: antialiased;
+      }
+      /* Custom hairline border utility */
+      .border-hairline {
+        border-color: #E5E5EA;
+      }
+    </style>
+  </head>
+  <body class="bg-white text-[#1D1D1F] min-h-screen flex flex-col antialiased selection:bg-[#0071E3] selection:text-white">
+    <div id="root" class="flex-1 flex flex-col"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
